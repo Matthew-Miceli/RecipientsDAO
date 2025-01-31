@@ -1,16 +1,19 @@
 package utils;
 
 import entity.Recipient;
-import transferlayer.RecipientDTO;
+import transferobjects.RecipientDTO;
 
 /**
  *
  * @author mattc
  */
-public class RecipientsMapper {
+public class RecipientMapper {
     
     
-    public Recipient toRecipient(RecipientDTO recipientDTO){
+    public static Recipient toRecipient(RecipientDTO recipientDTO){
+        if(recipientDTO == null){
+            return null;
+        }
         return new Recipient(
                 recipientDTO.getId(),
                 recipientDTO.getName(),
@@ -20,7 +23,10 @@ public class RecipientsMapper {
         );
     }
     
-    public RecipientDTO toRecipientDTO(Recipient recipient){
+    public static RecipientDTO toRecipientDTO(Recipient recipient){
+        if(recipient == null){
+            return null;
+        }
         return new RecipientDTO(
                 recipient.getId(),
                 recipient.getName(),
