@@ -1,6 +1,7 @@
 package businesslayer;
 
 import dataaccesslayer.impl.RecipientDAOImpl;
+import entity.Recipient;
 import transferobjects.RecipientDTO;
 import java.util.List;
 
@@ -9,16 +10,29 @@ import java.util.List;
  */
 public class MatthewMiceliAssignment1 {
 
-    public static void main(String[] args) {
-        RecipientDAOImpl employeeDAO = new RecipientDAOImpl();
+    public MatthewMiceliAssignment1(){}
 
-        System.out.println("\n--- Recipients Table --- ");
-        displayRecipients(employeeDAO.getAllRecipients());
+    public static void main(String[] args) {
+        RecipientDAOImpl recipientDAO = new RecipientDAOImpl();
+
+        Recipient testRecipient = new Recipient(70, "Matthew Miceli", 2004, "Ottawa", "Studies");
+
+        displayRecipients(recipientDAO.getAllRecipients());
+
+        recipientDAO.createRecipient(testRecipient);
+        displayRecipients(recipientDAO.getAllRecipients());
+
+        recipientDAO.deleteRecipient(testRecipient.getId());
+        displayRecipients(recipientDAO.getAllRecipients());
+
     }
 
     public static void displayRecipients(List<RecipientDTO> recipients) {
+        System.out.println();
+        System.out.println();
+        System.out.println("\n--- Recipients Table --- ");
         if (recipients.isEmpty()) {
-            System.out.println("No employees found.");
+            System.out.println("No Recipients Found.");
             return;
         }
 
