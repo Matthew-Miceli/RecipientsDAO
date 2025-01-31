@@ -3,6 +3,8 @@ package businesslayer;
 import dataaccesslayer.impl.RecipientDAOImpl;
 import entity.Recipient;
 import transferobjects.RecipientDTO;
+
+import java.sql.SQLOutput;
 import java.util.List;
 
 /**
@@ -17,20 +19,20 @@ public class MatthewMiceliAssignment1 {
 
         Recipient testRecipient = new Recipient(70, "Matthew Miceli", 2004, "Ottawa", "Studies");
 
+        System.out.println("\n--- Recipients Table --- ");
         displayRecipients(recipientDAO.getAllRecipients());
 
+        System.out.println("\nCreating Test Recipient...");
         recipientDAO.createRecipient(testRecipient);
         displayRecipients(recipientDAO.getAllRecipients());
 
+        System.out.println("\nDeleting Test Recipient...");
         recipientDAO.deleteRecipient(testRecipient.getId());
         displayRecipients(recipientDAO.getAllRecipients());
 
     }
 
     public static void displayRecipients(List<RecipientDTO> recipients) {
-        System.out.println();
-        System.out.println();
-        System.out.println("\n--- Recipients Table --- ");
         if (recipients.isEmpty()) {
             System.out.println("No Recipients Found.");
             return;
