@@ -1,7 +1,7 @@
 package entity;
 
 /**
- *
+ * This class holds all the properties of a recipient and all of its setters and getters.
  * @author mattc
  */
 public class Recipient {
@@ -12,9 +12,21 @@ public class Recipient {
     private String city;
     private String category;
 
+    /**
+     * No args constructor
+     * Not Used.
+     */
     public Recipient() {
     }
 
+    /**
+     * All args constructor
+     * @param id id of recipient
+     * @param name name of recipient
+     * @param year year of appointment of recipient
+     * @param city city of recipient
+     * @param category category of recipient
+     */
     public Recipient(int id, String name, int year, String city, String category) {
         this.id = id;
         this.name = name;
@@ -24,6 +36,7 @@ public class Recipient {
     }
 
     /**
+     * returns id
      * @return the id
      */
     public int getId() {
@@ -31,6 +44,7 @@ public class Recipient {
     }
 
     /**
+     * sets id
      * @param id the id to set
      */
     public void setId(int id) {
@@ -38,6 +52,7 @@ public class Recipient {
     }
 
     /**
+     * returns name
      * @return the name
      */
     public String getName() {
@@ -45,6 +60,7 @@ public class Recipient {
     }
 
     /**
+     * sets name
      * @param name the name to set
      */
     public void setName(String name) {
@@ -52,6 +68,7 @@ public class Recipient {
     }
 
     /**
+     * returns year
      * @return the year
      */
     public int getYear() {
@@ -59,6 +76,7 @@ public class Recipient {
     }
 
     /**
+     * sets year
      * @param year the year to set
      */
     public void setYear(int year) {
@@ -66,6 +84,7 @@ public class Recipient {
     }
 
     /**
+     * returns city
      * @return the city
      */
     public String getCity() {
@@ -73,6 +92,7 @@ public class Recipient {
     }
 
     /**
+     * sets city
      * @param city the city to set
      */
     public void setCity(String city) {
@@ -80,6 +100,7 @@ public class Recipient {
     }
 
     /**
+     * returns category
      * @return the category
      */
     public String getCategory() {
@@ -87,6 +108,7 @@ public class Recipient {
     }
 
     /**
+     * sets category
      * @param category the category to set
      */
     public void setCategory(String category) {

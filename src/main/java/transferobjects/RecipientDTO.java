@@ -1,7 +1,7 @@
 package transferobjects;
 
 /**
- *
+ * This class holds all the properties of a recipient data tranfer object and all of its setters and getters.
  * @author mattc
  */
 public class RecipientDTO {
@@ -11,9 +11,22 @@ public class RecipientDTO {
     private String city;
     private String category;
 
+    
+    /**
+     * Default no args constructor.
+     * No used.
+     */
     public RecipientDTO() {
     }
 
+    /**
+     * All args constructor
+     * @param id id of recipientDTO
+     * @param name name of recipientDTO
+     * @param year year of appointment of recipient DTO
+     * @param city city of recipient DTO
+     * @param category category of recipient DTO
+     */
     public RecipientDTO(int id, String name, int year, String city, String category) {
         this.id = id;
         this.name = name;
@@ -23,6 +36,7 @@ public class RecipientDTO {
     }
 
     /**
+     * returns id
      * @return the id
      */
     public int getId() {
@@ -30,6 +44,7 @@ public class RecipientDTO {
     }
 
     /**
+     * sets id
      * @param id the id to set
      */
     public void setId(int id) {
@@ -37,6 +52,7 @@ public class RecipientDTO {
     }
 
     /**
+     * returns name
      * @return the name
      */
     public String getName() {
@@ -44,6 +60,7 @@ public class RecipientDTO {
     }
 
     /**
+     * sets name
      * @param name the name to set
      */
     public void setName(String name) {
@@ -51,6 +68,7 @@ public class RecipientDTO {
     }
 
     /**
+     * returns year
      * @return the year
      */
     public int getYear() {
@@ -58,6 +76,7 @@ public class RecipientDTO {
     }
 
     /**
+     * sets year
      * @param year the year to set
      */
     public void setYear(int year) {
@@ -65,6 +84,7 @@ public class RecipientDTO {
     }
 
     /**
+     * returns city
      * @return the city
      */
     public String getCity() {
@@ -72,6 +92,7 @@ public class RecipientDTO {
     }
 
     /**
+     * sets city
      * @param city the city to set
      */
     public void setCity(String city) {
@@ -79,6 +100,7 @@ public class RecipientDTO {
     }
 
     /**
+     * returns category
      * @return the category
      */
     public String getCategory() {
@@ -86,6 +108,7 @@ public class RecipientDTO {
     }
 
     /**
+     * sets category
      * @param category the category to set
      */
     public void setCategory(String category) {
