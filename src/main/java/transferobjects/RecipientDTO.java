@@ -1,7 +1,7 @@
 package transferobjects;
 
 /**
- * This class holds all the properties of a recipient data tranfer object and all of its setters and getters.
+ * This class holds all the properties of a recipient data transfer object and all of its setters and getters.
  * @author mattc
  */
 public class RecipientDTO {
