@@ -12,14 +12,14 @@ import java.util.Properties;
  * This is a singleton class, used to create a thread safe connection to the database.
  * @author mattc
  */
-public class DatabaseConnection {
-    private static DatabaseConnection instance;
+public class DataSource {
+    private static DataSource instance;
     private Connection connection;
 
     /**
      * No args constructor used to load database properties from database.properties file and to create the connection
      */
-    private DatabaseConnection(){
+    private DataSource(){
         try{
             Properties props = new Properties();
             try(InputStream in = Files.newInputStream(Paths.get("src/database.properties"))) {
@@ -42,9 +42,9 @@ public class DatabaseConnection {
      * Checks if an instance of the connection already exists, if it does will return that instance, if not will create a new one.
      * @return instance returns the current instance
      */
-    public static synchronized DatabaseConnection getInstance(){
+    public static synchronized DataSource getInstance(){
         if(instance == null){
-            instance = new DatabaseConnection();
+            instance = new DataSource();
         }
 
         return instance;

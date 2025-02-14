@@ -1,7 +1,8 @@
-C:\Users\mattc\Documents\MatthewMiceliLab1\src\main\java\dataaccesslayer\impl\RecipientDAOImpl.java
-C:\Users\mattc\Documents\MatthewMiceliLab1\src\main\java\businesslayer\MatthewMiceliAssignment1.java
+C:\Users\mattc\Documents\MatthewMiceliLab1\src\main\java\businesslayer\RecipientValidation.java
+C:\Users\mattc\Documents\MatthewMiceliLab1\src\main\java\dataaccesslayer\RecipientDAOImpl.java
+C:\Users\mattc\Documents\MatthewMiceliLab1\src\main\java\dataaccesslayer\DataSource.java
+C:\Users\mattc\Documents\MatthewMiceliLab1\src\main\java\run\MatthewMiceliAssignment1.java
+C:\Users\mattc\Documents\MatthewMiceliLab1\src\main\java\businesslayer\ValidationException.java
 C:\Users\mattc\Documents\MatthewMiceliLab1\src\main\java\dataaccesslayer\RecipientDAO.java
 C:\Users\mattc\Documents\MatthewMiceliLab1\src\main\java\transferobjects\RecipientDTO.java
-C:\Users\mattc\Documents\MatthewMiceliLab1\src\main\java\utils\RecipientMapper.java
-C:\Users\mattc\Documents\MatthewMiceliLab1\src\main\java\dataaccesslayer\DatabaseConnection.java
-C:\Users\mattc\Documents\MatthewMiceliLab1\src\main\java\entity\Recipient.java
+C:\Users\mattc\Documents\MatthewMiceliLab1\src\main\java\businesslayer\RecipientBusinessLogic.java
